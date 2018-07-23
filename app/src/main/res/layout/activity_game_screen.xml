@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorBackground"
+    tools:context="com.example.ormil.battleships.GameScreen">
+
+    <FrameLayout
+        android:id="@+id/humanPlayerFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:paddingLeft="@dimen/image_thumbnail_spacing"
+        android:paddingTop="@dimen/image_thumbnail_spacing"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setupInfo"
+        android:background="@color/colorHumanBoard"
+        >
+        <GridView
+            android:id="@+id/humanPlayerGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center_vertical"
+            android:columnWidth="@dimen/image_thumbnail_size"
+            android:numColumns="@integer/grid_num_columns"
+            android:stretchMode="none"
+            android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+            android:verticalSpacing="@dimen/image_thumbnail_spacing"
+            >
+        </GridView>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/turnIndicatorLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <ImageView
+            android:id="@+id/turnIndicatorHuman"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft = "10dp"
+            android:layout_toLeftOf="@id/turnIndicatorDrawable"
+            android:background="@color/colorTurnIndicatorDivider"
+            android:layout_centerVertical="true" />
+
+
+        <ImageView
+            android:id="@+id/turnIndicatorDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:src="@drawable/ic_turn_indicator"
+            android:tint="@color/colorHumanBoard"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/turnIndicatorDrawable"
+        android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/turnIndicatorAi"
+                android:layout_width="150dp"
+                android:layout_height="4dp"
+                android:layout_marginRight = "10dp"
+                android:background="@color/colorTurnIndicatorDivider"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/turnIndicatorAiFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/turnIndicatorAi"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/turnIndicatorAi"
+                android:layout_toLeftOf="@+id/turnIndicatorAiFix"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/aiTurnIndicator"
+                android:fontFamily="@font/gilroy_extrabold"
+                android:textSize="18sp"
+                android:textColor="@color/colorAiBoard"/>
+    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/turnIndicatorHuman"
+            android:layout_marginLeft="10dp"
+            android:text="@string/humanTurnIndicator"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:textSize="18sp"
+            android:textColor="@color/colorHumanBoard"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/aiPlayerFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:paddingLeft="@dimen/image_thumbnail_spacing"
+        android:paddingTop="@dimen/image_thumbnail_spacing"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setupInfo"
+        android:background="@color/colorAiBoard"
+        >
+        <GridView
+            android:id="@+id/aiPlayerGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center_vertical"
+            android:columnWidth="@dimen/image_thumbnail_size"
+            android:numColumns="@integer/grid_num_columns"
+            android:stretchMode="none"
+            android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+            android:verticalSpacing="@dimen/image_thumbnail_spacing"
+            >
+        </GridView>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorBackground">#fff7f2</color>
+
+    <!-- START [Main Screen Colors]-->
+    <color name="colorMainTitle">#403f42</color>
+    <!-- END [Main Screen Colors]-->
+
+    <!-- START [Setup Screen Colors]-->
+    <color name="colorSetupTitle">#58588f</color>
+    <color name="colorSetupInfo">#A0A0A0</color>
+    <color name="colorSetupShip">#f09131</color>
+    <!-- END [Setup Screen Colors]-->
+
+    <!-- START [Game Screen Colors]-->
+    <color name="colorTurnIndicatorDivider">#979697</color>
+    <color name="colorHumanBoard">#527cbb</color>
+    <color name="colorAiBoard">#e17939</color>
+    <color name="colorGameHumanShip">#c2d9ef</color>
+    <color name="colorHitIconTint">#999491</color>
+    <color name="colorShipHitTint">#ab352c</color>
+    <color name="colorHitBackground">#80ccc5c2</color>
+    <color name="colorShipHitBackground">#80ab352c</color>
+    <color name="colorRecordOne">#d94564</color>
+    <color name="colorRecordTwo">#aa9ac9</color>
+    <color name="colorRecordThree">#9dc5e9</color>
+    <color name="colorNameFill">#58585b</color>
+    <color name="colorFillBackground">#e8e2dc</color>
+    <!-- END [Game Screen Colors]-->
+
+    <!-- START [Leaderboard Screen Colors]-->
+    <color name="colorListItemText">#ac5847</color>
+    <!-- END [Leaderboard Screen Colors]-->
+</resources>

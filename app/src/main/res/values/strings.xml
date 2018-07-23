@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Battleships</string>
+    <string name="google_maps_key">AIzaSyAyX7R7LGIgnPi3qZpZdp8SBDV8HyyxyBY</string>
+
+
+    <!-- START [Main Menu Strings]-->
+    <string name="startTitle">SHIPS\nBATTLES</string>
+    <string name="start_button">START</string>
+    <string name="initDifficulty">NORMAL</string>
+    <string name="startDifficultyStr">Difficulty :</string>
+    <!-- END [Main Menu Strings]-->
+
+    <!-- START [Setup Screen Strings]-->
+    <string name="setupTitle">Place your\nbattleships</string>
+    <string name="setupInfo">Randomize and confirm your board</string>
+    <string name="confirm_button">CONFIRM</string>
+    <!-- END [Setup Screen Strings]-->
+
+    <!-- START [Game Screen Strings]-->
+    <string name="humanTurnIndicator">YOU</string>
+    <string name="aiTurnIndicator">A.I</string>
+    <!-- END [Game Screen Strings]-->
+
+    <!-- START [End Screen Strings]-->
+    <string name="winStr">YOU\nWON</string>
+    <string name="loseStr">YOU\nDIED</string>
+    <string name="newRecord">NEW RECORD!</string>
+    <string name="nameFill">Enter your name :</string>
+    <string name="nameHint">Name</string>
+    <string name="scoreStr">Score :</string>
+    <!-- END [End Screen Strings]-->
+
+    <!-- START [Leaderboard Screen Strings]-->
+    <string name="leaderboardTitle">LEADERBOARD</string>
+    <string name="categoryName">Name</string>
+    <string name="categoryScore">Score</string>
+    <string name="categoryLat">Lat</string>
+    <string name="categoryLong">Long</string>
+    <string name="difficultyEasy">EASY</string>
+    <string name="difficultyNormal">NORMAL</string>
+    <string name="difficultyHard">HARD</string>
+    <!-- END [Leaderboard Screen Strings]-->
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="grid_num_rows">10</integer>
+    <integer name="grid_num_columns">10</integer>
+
+    <dimen name="image_thumbnail_size">30dp</dimen>
+    <dimen name="image_thumbnail_spacing">2dp</dimen>
+    <dimen name="image_grid_width">300dp</dimen>
+
+    <dimen name="new_record_text_size">80sp</dimen>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.ormil.battleships.BoardSetUp">
+
+    <TextView
+        android:id="@+id/setupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/gilroy_extrabold"
+        android:text="@string/setupTitle"
+        android:textAlignment="center"
+        android:textColor="@color/colorSetupTitle"
+        android:textSize="35sp"
+        android:lineSpacingMultiplier="0.75" />
+
+    <TextView
+        android:id="@+id/setupInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupTitle"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_info"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/gilroy_light"
+        android:gravity="center"
+        android:text="@string/setupInfo"
+        android:textAlignment="center"
+        android:textColor="@color/colorSetupInfo"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/setupFrameLayout"
+        android:layout_width="@dimen/image_grid_width"
+        android:layout_height="@dimen/image_grid_width"
+        android:paddingLeft="@dimen/image_thumbnail_spacing"
+        android:paddingTop="@dimen/image_thumbnail_spacing"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setupInfo"
+        android:background="#ff6b6b6b"
+        >
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridView"
+            android:color="#ff6b6b6b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center_vertical"
+            android:columnWidth="@dimen/image_thumbnail_size"
+            android:numColumns="@integer/grid_num_columns"
+            android:stretchMode="none"
+            android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+            android:verticalSpacing="@dimen/image_thumbnail_spacing"
+            >
+        </GridView>
+    </FrameLayout>
+    <ImageButton
+        android:id="@+id/randomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setupFrameLayout"
+        android:src="@drawable/ic_random"
+        android:background="@drawable/rounded_square_button"
+        android:backgroundTint="@color/setup_screen_random_button"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/setupConfirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/randomButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_square_button"
+        android:backgroundTint="@color/setup_screen_confirm_button"
+        android:fontFamily="@font/gilroy_extrabold"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/confirm_button"
+        android:textColor="@color/colorBackground"
+        android:textSize="25sp" />
+
+</RelativeLayout>

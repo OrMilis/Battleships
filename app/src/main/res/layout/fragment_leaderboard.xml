@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorBackground"
+    tools:context="com.example.ormil.battleships.GameScreen">
+
+        <TextView
+            android:id="@+id/leaderboard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/leaderboardTitle"
+            android:textColor="@color/colorListItemText"
+            android:fontFamily="@font/canter_bold_3d"
+            android:textSize="70sp"/>
+
+        <LinearLayout
+            android:id="@+id/listCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leaderboard_title"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:textAlignment="center"
+                    android:text="@string/categoryName"
+                    android:fontFamily="@font/canter_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorListItemText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:textAlignment="center"
+                    android:text="@string/categoryScore"
+                    android:fontFamily="@font/canter_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorListItemText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:textAlignment="center"
+                    android:text="@string/categoryLat"
+                    android:fontFamily="@font/canter_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorListItemText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:textAlignment="center"
+                    android:text="@string/categoryLong"
+                    android:fontFamily="@font/canter_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorListItemText"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/leaderboard_listFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/difficultyButtons"
+            android:layout_below="@+id/listCategory">
+
+                <ListView
+                    android:id="@+id/leaderboard_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/difficultyButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp">
+
+                <Button
+                    android:id="@+id/easyButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_square_button"
+                    android:backgroundTint="@color/colorListItemText"
+                    android:text="@string/difficultyEasy"
+                    android:textColor="@color/colorBackground"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:textSize="16sp"/>
+                <Button
+                    android:id="@+id/normalButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_square_button"
+                    android:backgroundTint="@color/colorListItemText"
+                    android:text="@string/difficultyNormal"
+                    android:textColor="@color/colorBackground"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:textSize="16sp"/>
+                <Button
+                    android:id="@+id/hardButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_square_button"
+                    android:backgroundTint="@color/colorListItemText"
+                    android:text="@string/difficultyHard"
+                    android:textColor="@color/colorBackground"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:textSize="16sp"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

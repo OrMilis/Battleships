@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.example.ormil.battleships.MainMenu">
+
+    <ImageView
+        android:id="@+id/startTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_menu_logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/buttonPanel">
+
+        <ImageButton
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_button"
+            android:backgroundTint="@color/menu_buttons"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:gravity="center"
+            android:minHeight="150dp"
+            android:minWidth="150dp"
+            android:src="@drawable/ic_start"
+            android:tint="@color/colorBackground" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/startButton"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:id="@+id/difficultyContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/startDifficultyString"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:text="@string/startDifficultyStr"
+                    android:textSize="20sp"
+                    android:textColor="@color/menu_buttons"/>
+
+                <Button
+                    android:id="@+id/difficulty_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/startDifficultyString"
+                    android:background="@drawable/circle_button"
+                    android:backgroundTint="@color/menu_buttons"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:gravity="center"
+                    android:minHeight="100dp"
+                    android:minWidth="100dp"
+                    android:text="@string/initDifficulty"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/leaderboard_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/difficultyContainer"
+                android:background="@drawable/circle_button"
+                android:backgroundTint="@color/menu_buttons"
+                android:fontFamily="@font/gilroy_extrabold"
+                android:minHeight="75dp"
+                android:minWidth="75dp"
+                android:src="@drawable/ic_leaderboard"
+                android:tint="@color/colorBackground" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
